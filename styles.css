@@ -1,92 +1,186 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    border: none;
-  
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  /* overflow-x: hidden; */
 }
 
-
-
 #head {
-font-family: serif;
-font-size: 20px;
-font-weight: bold;
-font-style: italic;
-color: whitesmoke;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  color: whitesmoke;
+  font-family: "Brush Script MT", cursive;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    background-color: coral;
-    width: 100%;
-  
-  }
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  background-color: coral;
+  width: 100%;
+}
+
 .color {
-    color: white;
+  color: white;
 }
 
 .nav.items {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
- #hero_img {
-    background-image: url(/image/bg_image.png);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    
- }
+#hero_img {
+  background-image: url(/image/bg_image.png);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.hero_items {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  font-size: 20px; */
+
+  position: relative;
+  top: 50%;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  font-family: "Brush Script MT", cursive;
  
- .hero_items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
- }
+}
 
- #bg_2{
-    background-image: url(/image/bg2.png);
-    /* width: 100vw; */
-    height: 100vh;
-    background-size: cover;
- }
- #story{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 56px;
-    font-family:serif;
-    font-style: italic;
- }
+#bg_2 {
+  background-image: url(/image/bg2.png);
+  /* width: 100vw; */
+  height: 100vh;
+  
+}
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  padding-top: 10%;
+  
+}
 
- #story2{
-    display: flex;
-    align-items: center;justify-content: center;
- }
+#story2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 10%;
+  margin: auto;
+  font-size: 16.8px;
+  font-family: sans-serif;
+}
 
- #gallery {
-   display: grid;
-   grid-template-columns: auto auto auto;
+.dinner {
+  font-family: "Brush Script MT", cursive;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.bg3 {
+  background-image: url(./image/bg3.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 50px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.gallery-item img{
    width: 100%;
-   gap: 50px;
- }
- 
- .gallery-item {
-   width: 100%;
-   height: 500px;
-   position: relative;
- }
- 
+}
 
- 
+#our-gall {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.gall {
+  font-size: 60px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 35px;
+  text-decoration-thickness: 2px;
+  text-decoration-style: double;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-color: brown;
+  border-style: solid;
+}
+
+#cere-feat {
+  padding-top: 100px;
+  /* padding-left: 0%; */
+  display: flex;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+ color: brown;
+ width: 50%;
+}
+
+/* #bg4{
+   background-color: #E8EAED;
+   
+} */
+
+.border {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  margin: 20px;
+  /* background-color: white; */
+  /* border-radius: 10px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.2);
+}
+.pre-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
