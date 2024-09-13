@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WED BY DEBS</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <nav>
-      <h4 id="head">wedding</h4>
+      <h4 id="head">WED <span>.com</span></h4>
       <div class="nav items">
         <a class="color" href="#">HOME</a>
+        <select name="dropdown" id="dp">
+          <option value="our">our STORIES</option>
+          <option value="their wedding">their wedding</option>
+          <option value="gallery">gallery</option>
+          <option value="rsvp">rsvp</option>
+        </select>
+        
         <a class="color" href="#">OUR STORIES</a>
         <a class="color" href="#">THEIR WEDDING</a>
         <a class="color" href="#">GALLERY</a>
@@ -19,8 +27,8 @@
     </nav>
     <section id="hero_img">
       <div class="hero_items">
-        <h2>Made With LOVE</h3>
-        <h2>23 DECEMBER 2024</h3>
+        <h2>Made With LOVE</h2>
+        <h2>23 DECEMBER 2024</h2>
         <h3>Save The Date</h3>
         <h2>Agnes & David</h2>
       </div>
@@ -37,31 +45,25 @@
       </div>
       <div class="dinner gal bg3">
         <div>
-          <p class="underline">Don't miss it!</p>
-        </div>
-        <div>
-          <br /><br /><br /><br /><br />
-          <p>Remember To Come With A Gift</p>
+          <p class="line">Don't miss it!</p>
+          <p id="rem">Remember To Come With A Gift</p>
         </div>
       </div>
     </section>
-    <section>Wedding Details</section>
-
+    <section>
+      <h3 class="gall ">Wedding Details</h3>
+    </section>
     <section class="bg3">
-      <div>
-        <h3 class="gall ">Wedding & Ceremonies</h3>
-      </div>
-      <div >
-        <p id="cere-feat">
+      <div class="wed-sec">
+        <h3 id="wed">Wedding & Ceremonies</h3>
+        <p class="w-[60%]" >
           We assist our clients in creating memorable, magical celebrations that
           exceed expectations. Our personal approach ensures the weddings we
           plan are meaningful and truly reflect our clients as individuals, as
           couples, and states something about their shared values and sense of
           style.
         </p>
-      </div>
-      <div>
-        <button>learn more</button>
+        <button class="btn">learn more</button>
       </div>
     </section>
     <section id="our-gall">
@@ -85,23 +87,17 @@
         <div class="gallery-item">
           <img src="./image/image1.png" alt="cake" />
         </div>
-        <div class="view view-overlay">
+        <div class="border-2 border-orange-600 content">
           <p>VIEW ALL GALLERY</p>
         </div>
       </div>
     </section>
 
-    <section class="pre-footer border">
+    <section class="pre-footer border text-center">
       <div>
         <h2 class="gall">Contact Us</h2>
-      </div>
-      <div>
-        <p>On 23rd December 2024 Join us as we celebrate life and love.</p>
-      </div>
-      <div>
-        <h4>057-127-0912</h4>
-      </div>
-      <div>
+        <p>Join us on 23rd December 2024 as we celebrate life and love.</p>
+        <h4 class="text-xl italic text-center font-semibold">057-127-0912</h4>
         <p>14 Endive street, Ashongman Estate, Accra-Ghana</p>
       </div>
     </section>

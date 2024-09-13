@@ -3,7 +3,7 @@
   padding: 0;
   text-decoration: none;
   border: none;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 #head {
@@ -12,6 +12,7 @@
   font-style: italic;
   color: whitesmoke;
   font-family: "Brush Script MT", cursive;
+
 }
 
 nav {
@@ -22,6 +23,7 @@ nav {
   align-items: center;
   background-color: coral;
   width: 100%;
+  overflow: hidden;
 }
 
 .color {
@@ -32,6 +34,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+#dp {
+  width: 20px;
+  height: 20px;
 }
 #hero_img {
   background-image: url(/image/bg_image.png);
@@ -52,35 +58,34 @@ nav {
 
   position: relative;
   top: 50%;
-  color: white;
+  color: rgb(161, 42, 42);
   font-weight: bold;
   margin: auto;
   font-size: 30px;
   text-align: center;
   margin: auto;
   font-family: "Brush Script MT", cursive;
- 
+
 }
 
 #bg_2 {
   background-image: url(/image/bg2.png);
   /* width: 100vw; */
-  height: 100vh;
-  
+  height: 50vh;
 }
 .story {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  padding-top: 10%;
-  
+  /* padding-top: 10%; */
 }
 
 #story2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
   position: relative;
   top: 10%;
   margin: auto;
@@ -106,19 +111,38 @@ nav {
 
 #gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .gallery-item {
   width: 100%;
-  height: 500px;
   position: relative;
 }
 
-.gallery-item img{
-   width: 100%;
+.gallery-item img {
+  width: 100%;
+}
+
+.gallery-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+}
+
+.gallery-overlay:hover {
+  opacity: 1;
 }
 
 #our-gall {
@@ -142,12 +166,59 @@ nav {
   text-decoration-style: double;
 }
 
-.view {
+.line {
+  font-size: 70px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+}
+
+#rem {
+  padding-top: 60px;
+}
+
+#wed {
+  font-size: 60px;
+  font-family: "Brush Script MT", cursive;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 60px; */
+  margin-top: 50px;
+}
+
+.vw {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-color: brown;
   border-style: solid;
+  width: 200px;
+  align-content: center;
+}
+.wed-sec{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 30px;
+  margin-top: 15%;
+}
+
+.assist{
+  font-size: 70px;
+  font-family: sans-serif;
+}
+
+.btn{
+  background-color:rgb(233, 100, 51);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border-style: double;
+  border-width: 9px;
+  font-size: 15px;
 }
 
 #cere-feat {
@@ -157,8 +228,7 @@ nav {
   text-align: center;
   margin: auto;
   font-size: 30px;
- color: brown;
- width: 50%;
+  color: brown;
 }
 
 /* #bg4{
@@ -180,7 +250,7 @@ nav {
 .pre-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 120%;
+  row-gap: 30px;
 }
-
-
-
