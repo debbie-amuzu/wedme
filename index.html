@@ -8,41 +8,79 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav>
-      <h4 id="head">WED <span>.com</span></h4>
-      <div class="nav items">
-        <a class="color" href="#">HOME</a>
+    <nav class="nav-bar">
+      <div class="brand">Deb's BBl</div>
+      <ul class="nav-items">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="">Our Story ▼</a>
+          <ul class="dropdown-items">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a href="#">Categories ▼</a>
+              <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Categories</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Their Wedding</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="#">RSVP</a></li>
+      </ul>
+    </nav>
+
+    <!-- <nav class="nav-bar">
+      <div class="brand">Deb's BBL</div>
+      <div class="nav-items">
+        <a href="#">HOME</a>
         <select name="dropdown" id="dp">
           <option value="our">our STORIES</option>
           <option value="their wedding">their wedding</option>
           <option value="gallery">gallery</option>
           <option value="rsvp">rsvp</option>
         </select>
-        
-        <a class="color" href="#">OUR STORIES</a>
-        <a class="color" href="#">THEIR WEDDING</a>
-        <a class="color" href="#">GALLERY</a>
-        <a class="color" href="#">RSVP</a>
+        <a href="#">OUR STORIES</a>
+        <a href="#">THEIR WEDDING</a>
+        <a href="#">GALLERY</a>
+        <a href="#">RSVP</a>
       </div>
-    </nav>
-    <section id="hero_img">
+    </nav> -->
+
+    <hero class="hero hero-overlay">
       <div class="hero_items">
-        <h2>Made With LOVE</h2>
-        <h2>23 DECEMBER 2024</h2>
-        <h3>Save The Date</h3>
-        <h2>Agnes & David</h2>
+        <div class="rib">
+          <h1>🎀</h1>
+        </div>
+        <h3 class="Date text-2xl">Save The Date </h2>
+        <h3 class="Date">23 DECEMBER 2024</h3>
+        <h2 class="coup">Mic <span class="love">❤ </span>Barbs</h2>
       </div>
-    </section>
+    </hero>
+
     <section>
       <div id="bg_2">
         <h3 class="story gall">our story</h3>
         <p id="story2">
           Every bride and groom wants an incomparable wedding combined with
-          fantasy and style. <br>We create stunning, one-of-a-kind events produced
-          and styled to perfection. From traditional to modern, elegant and
-          relaxed, we focus on any event we plan.
+          fantasy and style. <br />We create stunning, one-of-a-kind events
+          produced and styled to perfection. From traditional to modern, elegant
+          and relaxed, we focus on any event we plan.
         </p>
       </div>
+    </section>
+
+
+      <section class="prep">
+<div>
+
+</div>
+
+
+      </section>
       <div class="dinner gal bg3">
         <div>
           <p class="line">Don't miss it!</p>
@@ -51,12 +89,12 @@
       </div>
     </section>
     <section>
-      <h3 class="gall ">Wedding Details</h3>
+      <h3 class="gall">Wedding Details</h3>
     </section>
     <section class="bg3">
       <div class="wed-sec">
         <h3 id="wed">Wedding & Ceremonies</h3>
-        <p class="w-[60%]" >
+        <p class="w-[60%]">
           We assist our clients in creating memorable, magical celebrations that
           exceed expectations. Our personal approach ensures the weddings we
           plan are meaningful and truly reflect our clients as individuals, as
