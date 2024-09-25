@@ -12,7 +12,7 @@
   justify-content: space-between;
   /* align-items: center; */
   padding: 20px 1px 0px 10px;
-  background-color: rgb(244, 145, 110);
+  background-color: rgb(226, 151, 124);
   /* background-color: rgba(0, 0, 0, 0.5); */
   position: relative;
   top: 0;
@@ -31,7 +31,7 @@
   font-size: 40px;
   margin-left: 10px;
   width: 30%;
-  height: 15vh;
+  /* height: 15vh; */
 }
 
 .nav-items {
@@ -79,7 +79,8 @@
   display: block;
 }
 
-.dropdown:hover . .dropdown-items {
+/* .dropdown:hover .  */
+.dropdown-items {
   display: block;
 }
 
@@ -106,7 +107,7 @@
 }
 
 .hero_items {
-  width: 50%%;
+  width: 50%;
   height: 60%;
 }
 
@@ -117,7 +118,7 @@
 }
 
 .Date {
-  padding;
+  /* padding; */
   font-style: oblique;
   font-size: 25px;
   font-weight: bold;
@@ -220,7 +221,7 @@
 .word {
   font-size: 20px;
   font-weight: bold;
-  border-color: ;
+  /* border-color: ; */
   width: 150%;
   /* background: white; */
   color: rgb(208, 43, 226)
